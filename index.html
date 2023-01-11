@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Marcos Kropp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Press+Start+2P&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css" />
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="vscode.css" />
+</head>
+
+<body>
+	<img src="./assets/bg.jpg" id="image" class="principal-image" />
+	<div class="principal-container">
+		<div class="principal-content">
+			<h1>MARCOS KROPP</h1>
+			<h2>Creative Developer</h2>
+		</div>
+	</div>
+
+	<button class="go-to go-to-vscode" onclick="smoothScroll(document.getElementById('vscode-spacing'))">
+		<div class="initial-arrow arrow-down initial-arrow-first"></div>
+		<div class="initial-arrow arrow-down"></div>
+	</button>
+
+	<div class="info-container" id="info-container">
+		<div class="info-content">
+
+			<div class="vscode">
+				<div class="vscode-spacing" id="vscode-spacing"></div>
+				<div class="vscode-buttons" id="vscode-buttons">
+					<div class="vscode-buttons-left">
+						<div class="vscode-button vscode-button-red"></div>
+						<div class="vscode-button vscode-button-yellow"></div>
+						<div class="vscode-button vscode-button-green"></div>
+					</div>
+					<div class="vscode-buttons-right">
+						<div class="vscode-primary-toggle">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
+						<div class="vscode-panel-toggle">
+							<div class="top"></div>
+							<div class="bottom"></div>
+						</div>
+						<div class="vscode-secondary-toggle">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
+						<div class="vscode-vertical-divisor"></div>
+						<div class="vscode-customize-layout">
+							<div class="left"></div>
+							<div class="right">
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="vscode-container">
+					<div class="vscode-left-bar">
+						<img src="./assets/file-multiple.svg" class="vscode-left-bar-icons" />
+						<img src="./assets/search.svg" class="vscode-left-bar-icons vscode-left-bar-icon-search" />
+						<img src="./assets/source-branch.svg" class="vscode-left-bar-icons" />
+						<img src="./assets/play-outline.svg" class="vscode-left-bar-icons" />
+						<img src="./assets/window.svg" class="vscode-left-bar-icons" />
+						<div class="vscode-left-bar-bottom">
+							<img src="./assets/account-circle.svg" class="vscode-left-bar-icons" />
+							<img src="./assets/settings.svg" class="vscode-left-bar-icons" />
+						</div>
+					</div>
+					<div class="vscode-files">
+						<div class="explorer">
+							<p>EXPLORER</p>
+							<div class="dots">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="tab">
+							<img src="./assets/chevron-down.svg" class="chevron-down" />
+							<p>MY-PORTFOLIO</p>
+						</div>
+						<div class="files">
+							<div>
+								<img src="./assets/chevron-right.svg" class="chevron-right" />
+								<p>node_modules</p>
+							</div>
+							<div>
+								<img src="./assets/chevron-right.svg" class="chevron-right" />
+								<p>src</p>
+							</div>
+							<p>.gitignore</p>
+							<p>index.tsx</p>
+							<p>infos.xml</p>
+							<p>package.json</p>
+							<p>README.md</p>
+						</div>
+						<div class="bottom-tab">
+							<div class="tab initial-tab">
+								<img src="./assets/chevron-right.svg" class="chevron-right" />
+								<p>OUTLINE</p>
+							</div>
+							<div class="tab">
+								<img src="./assets/chevron-right.svg" class="chevron-right" />
+								<p>TIMELINE</p>
+							</div>
+						</div>
+					</div>
+					<div class="vscode-right-content">
+						<div class="vscode-selected-files-container">
+							<div class="vscode-selected-files-content">
+								<div class="vscode-selected-files vscode-selected-file">
+									<p class="vscode-selected-files-text">
+										infos.xml M
+									</p>
+									<div class="vscode-selected-files-dot"></div>
+								</div>
+								<div class="vscode-selected-files">
+									<p class="vscode-selected-files-text">
+										index.tsx M
+									</p>
+									<img class="vscode-selected-files-close-icon" src="./assets/close.svg" />
+								</div>
+							</div>
+							<div class="vscode-selected-files-right">
+								<img class="vscode-selected-files-right-icon" src="./assets/source-pull.svg" />
+								<div class="vscode-secondary-toggle">
+									<div class="left"></div>
+									<div class="right"></div>
+								</div>
+
+								<div class="vscode-selected-files-right-dots-container">
+									<div class="vscode-selected-files-right-dots"></div>
+									<div class="vscode-selected-files-right-dots"></div>
+									<div class="vscode-selected-files-right-dots"></div>
+								</div>
+							</div>
+						</div>
+						<div class="work" id="work">
+							<div class="typed-work"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="vscode-bottom-content">
+					<img src="./assets/source-branch.svg" class="vscode-bottom-source-branch-icon" />
+					<p class="vscode-bottom-text">main</p>
+					<p class="vscode-bottom-text-star">*</p>
+					<img src="./assets/sync.svg" class="vscode-bottom-sync-icon" />
+					<img src="./assets/highlight-off.svg" class="vscode-bottom-highlight-off-icon" />
+					<p class="vscode-bottom-text">0</p>
+					<img src="./assets/alert.svg" class="vscode-bottom-alert-icon" />
+					<p class="vscode-bottom-text">0</p>
+
+					<div class="vscode-bottom-content-right">
+						<p class="vscode-bottom-content-right-text">Spaces: 2</p>
+						<p class="vscode-bottom-content-right-text">UTF-8</p>
+						<p class="vscode-bottom-content-right-text">LF</p>
+						<img src="./assets/data-object.svg" class="vscode-bottom-content-right-data-object-icon" />
+						<p class="vscode-bottom-content-right-text">XML</p>
+						<img src="./assets/notifications.svg" class="vscode-bottom-content-right-icons" />
+						<img src="./assets/duck.svg" class="vscode-bottom-content-right-icons" />
+					</div>
+				</div>
+			</div>
+
+			<div class="work-card">
+				<p class="work-title">Luzerna city hall</p>
+				<p class="work-date">2017/2017</p>
+				<p class="work-description">Working as fullstack developer to create an internal log work system,
+					and the website of city hall, both in PHP
+				</p>
+			</div>
+
+			<div class="work-card">
+				<p class="work-title">Freelancer</p>
+				<p class="work-date">2018/2019</p>
+				<p class="work-description">Improving and creating little applications in PHP</p>
+			</div>
+
+			<div class="work-card">
+				<p class="work-title">Vizir Software Studio</p>
+				<p class="work-date">2019/2022</p>
+				<p class="work-description">Developing an unified registry system to Natura using React js. An internal
+					library of web components and an integrated payment system in Stone with React js. Finally,
+					developing an ecommerce
+					app in BanQi using React Native
+				</p>
+			</div>
+
+			<div class="work-card">
+				<p class="work-title">Questrade</p>
+				<p class="work-date">2022</p>
+				<p class="work-description">Creating a library of components to be used in internal projects with React
+					Native
+				</p>
+			</div>
+
+
+			<button class="go-to go-to-skill-progress" onclick="smoothScroll(document.getElementById('skills'))">
+				<div class="arrow first-arrow"></div>
+				<div class="arrow"></div>
+			</button>
+
+			<div id="skills" class="skills">
+				<div id="skill-progress"></div>
+			</div>
+
+			<button class="go-to go-to-contact" onclick="smoothScroll(document.getElementById('contact'))">
+				<div class="arrow first-arrow"></div>
+				<div class="arrow"></div>
+			</button>
+
+			<div class="contact" id="contact">
+				<div id="contact-messages">
+					<h3 id="contact-title">Wanna contact me by some reason?</h3>
+					<div id="contact-messages-after-submit">
+						<h2 id="contact-title-after-submit">Thank you!</h3>
+							<h3 id="contact-description-after-submit">Your
+								submission has been
+								sent
+							</h3>
+					</div>
+				</div>
+				<form enctype="text/plain"
+					action="https://docs.google.com/forms/d/e/1FAIpQLSeuhV2Ni1RANEQzDPBao5E43cxLr8CyGl-cDPZcXykWgemw5A/formResponse"
+					target="hidden-iframe" onsubmit="formSubmit()" id="form">
+					<label for="name">Name</label>
+					<div class="input-container">
+						<input required id="name" name="entry.566344870" />
+					</div>
+					<label for="surname">Surname</label>
+					<div class="input-container">
+						<input id="surname" name="entry.1449917994" />
+					</div>
+					<label for="email">E-mail</label>
+					<div class="input-container">
+						<input required type="email" id="email" name="entry.472168640" />
+					</div>
+					<label for="content">Content</label>
+
+					<div class="textarea-container">
+						<textarea required id="content" name="entry.914759286"></textarea>
+					</div>
+					<div class="bottom-form">
+						<div class="social-container">
+							<a target="_blank" href="https://github.com/marcoskropp" class="social-button">
+								<img src="./assets/github.svg" />
+							</a>
+							<a target="_blank" href="https://www.instagram.com/marcos_kropp/" class="social-button">
+								<img src="./assets/instagram.svg" />
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/in/marcos-ricardo-kropp"
+								class="social-button">
+								<img src="./assets/linkedin.svg" />
+							</a>
+						</div>
+						<button class="submit-button" type="submit">
+							Submit
+						</button>
+					</div>
+				</form>
+				<iframe name="hidden-iframe" id="hidden-iframe"></iframe>
+
+				<button class="go-to go-to-init" onclick="smoothScroll(document.getElementById('info-container'))">
+					<div class="arrow first-arrow arrow-up"></div>
+					<div class="arrow second-arrow arrow-up"></div>
+					<div class="arrow arrow-up"></div>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		const formSubmit = () => {
+			document.getElementById("form").style = "display: none;";
+			document.getElementById("contact-messages").style = "margin-bottom: 50px;";
+			document.getElementById("contact-title").style = "display: none;";
+			document.getElementById("contact-messages-after-submit").style = "display: block; margin-bottom: 60px;";
+			document.getElementById("contact-title-after-submit").style = "margin-bottom: 40px; text-align: center;";
+
+			const socialContainer = document.getElementsByClassName("social-container")[0];
+			socialContainer.style = "display: flex; justify-content: space-between;";
+
+			const socialButtons = document.getElementsByClassName("social-button");
+			for (let i = 0; i < socialButtons.length; i++) {
+				socialButtons[i].style = "width: 50px;"
+			}
+
+			document.getElementById("contact-messages").appendChild(socialContainer);
+		}
+	</script>
+
+	<script type="module" src="./utils.js"></script>
+
+	<script src="./libs/three.min.js"></script>
+	<script type="module" src="./libs/ColladaLoader.js"></script>
+	<script src="./libs/typed.js"></script>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
